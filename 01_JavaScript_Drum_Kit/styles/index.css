@@ -1,0 +1,120 @@
+html {
+    font-size: 10px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --container-padding: 3rem;
+    --title-size: 4rem;
+    --title-ff: 'Rubik One', sans-serif;
+    --title-fw: 900;
+    --title-spacing: 1rem;
+    --title-padding: 1.5rem 3rem;
+    --border-radius: 1rem;
+    --color-light: azure;
+    --color-black: black;
+    --color-gold: greenyellow;
+    --gap: 4rem;
+    --kbd-fs: 3rem;
+    --sound-fs: 1.8rem;
+    --sound-ff: Comic Sans MS, Comic Sans, cursive;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    padding: var(--container-padding);
+    background-image: url('../src/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: var(--title-size);
+    text-transform: uppercase;
+    background: var(--color-black);
+    word-spacing: var(--title-spacing);
+    letter-spacing: var(--title-spacing);
+    display: table;
+    color: var(--color-light);
+    border-radius: var(--border-radius);
+    mix-blend-mode: multiply;
+    padding: var(--title-padding);
+    font-family: var(--title-ff);
+    font-weight: var(--title-fw);
+    animation: 1s linear 0s infinite alternate titleAnimation;
+}
+
+@keyframes titleAnimation {
+    from {
+        transform: scale(1.2);
+    } 
+    to {
+        transform: scale(1);
+    }
+}
+
+.container {
+    gap: calc(var(--gap) * 1.5);
+    align-items: center;
+    width: 80rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--gap) / 2);
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid var(--color-gold);
+    outline: 2px solid var(--color-black);
+    transition: all .6s ease;
+}
+
+.kbd {
+    font-size: var(--kbd-fs);
+    font-weight: var(--title-fw);
+}
+
+.sound {
+    letter-spacing: calc(var(--title-spacing) / 2);
+    font-family: var(--sound-ff);
+    font-size: var(--sound-fs);
+}
+
+.play {
+    transform: scale(1.2);
+    box-shadow: 0 0 1rem 1rem var(--color-gold);
+}
+
+.play > .kbd {
+    animation: 1s linear 0s infinite alternate titleAnimation;
+}
+
+.play > .sound {
+    animation: 1s linear 0s infinite alternate titleAnimation;
+    animation: 1s linear 0s infinite alternate-reverse titleAnimation;
+}
