@@ -36,6 +36,7 @@ html {
     --font-family: Bradley Hand, cursive;
     --label-fs: 2.5rem;
     --label-fw: 700;
+    --border-radius: 1rem;
 }
 
 .main {
@@ -72,4 +73,11 @@ label {
 input {
     width: 13rem;
     height: 4rem;
+}
+
+.img {
+    padding: var(--spacing);
+    background: var(--color-base);
+    filter: blur(var(--blur));
+    border-radius: var(--border-radius);
 }
