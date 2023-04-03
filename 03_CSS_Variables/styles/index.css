@@ -22,6 +22,22 @@ html {
 
 :root {
     --color-base: #0ce0b6;
+    --color-black: black;
+    --color-light: azure;
     --spacing: 10px;
     --blur: 10px;
+    --main-width: 100vw;
+    --main-height: 100vh;
+    --padding: 3rem;
+    --align-center: center;
+    --gap: 3rem;
+}
+
+.main {
+    width: var(--main-width);
+    height: var(--main-height);
+    padding: var(--padding);
+    background-color: var(--color-black);
+    align-items: var(--align-center);
+    gap: var(--gap);
 }
