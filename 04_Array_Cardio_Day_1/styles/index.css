@@ -37,6 +37,11 @@ html {
     --color-green: #0ce0b6;
     --align-center: center;
     --gap: 4rem;
+    --title-fs: 5rem;
+    --title-fw: 900;
+    --font-family: Bradley Hand, cursive;
+    --word-spacing: 1rem;
+    --letter-spacing: var(--word-spacing);
 }
 
 .main {
@@ -49,6 +54,9 @@ html {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(49, 42, 196) 60%, rgb(28, 234, 241) 100%);
     background-size: 400%;
     animation: 4s ease 0s infinite alternate backgroundAnimation;
+    gap: var(--gap);
+    font-family: var(--font-family);
+    word-spacing: var(--word-spacing);
 }
 
 @keyframes backgroundAnimation {
@@ -61,4 +69,11 @@ html {
     100% {
         background-position: 80% 0%;
     }
+}
+
+.title {
+    font-size: var(--title-fs);
+    color: var(--color-light);
+    font-weight: var(--title-fw);
+    letter-spacing: calc(var(--letter-spacing) * 2);
 }
