@@ -55,3 +55,8 @@ html {
     font-size: var(--title-fs);
     font-weight: var(--title-fw);
 }
+
+.controls {
+    gap: var(--gap);
+    align-items: var(--align-center);
+}
