@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", ( ) => {
-    // initial message
-    console.log("the page is loaded");
+    
+    const option = document.querySelectorAll("input");
+    
 });
