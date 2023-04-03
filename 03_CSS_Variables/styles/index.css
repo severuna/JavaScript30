@@ -10,6 +10,16 @@ html {
     box-sizing: border-box;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 :root {
     --color-base: #0ce0b6;
     --spacing: 10px;
