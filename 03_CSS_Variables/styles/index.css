@@ -31,6 +31,9 @@ html {
     --padding: 3rem;
     --align-center: center;
     --gap: 3rem;
+    --title-fs: 3rem;
+    --title-fw: 900;
+    --font-family: Bradley Hand, cursive;
 }
 
 .main {
@@ -40,4 +43,15 @@ html {
     background-color: var(--color-black);
     align-items: var(--align-center);
     gap: var(--gap);
+    font-family: var(--font-family);
+}
+
+.title {
+    color: transparent;
+    background: linear-gradient(90deg, rgba(71,223,232,1) 0%, rgba(114,123,242,1) 45%, rgba(166,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--color-base);
+    font-size: var(--title-fs);
+    font-weight: var(--title-fw);
 }
