@@ -37,6 +37,7 @@ body {
 .clock {
     width: 40rem;
     height: 40rem;
+    padding: 2rem;
     border-radius: 50%;
     border: 4px solid transparent;
     background: rgb(2,0,36);
@@ -50,4 +51,17 @@ body {
     width: 100%;
     height: 100%;
     transform: translateY(-3px);
+}
+.hand {
+    width: 50%;
+    height: 6px;
+    border-radius: 1rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(121,9,66,1) 0%, rgba(0,212,255,1) 100%);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
