@@ -33,3 +33,13 @@ body {
         background-position: 80% 0%;
     }
 }
+
+.clock {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, #253481 0%, rgba(2,0,36,1) 100%) padding-box, linear-gradient(to right, #f93ffb 0%, rgba(2,0,36,1) 100%) border-box;
+    margin: 0 auto;
+}
