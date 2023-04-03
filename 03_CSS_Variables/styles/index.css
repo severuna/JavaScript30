@@ -34,6 +34,8 @@ html {
     --title-fs: 3rem;
     --title-fw: 900;
     --font-family: Bradley Hand, cursive;
+    --label-fs: 2.5rem;
+    --label-fw: 700;
 }
 
 .main {
@@ -61,3 +63,8 @@ html {
     align-items: var(--align-center);
 }
 
+label {
+    color: var(--color-light);
+    font-size: var(--label-fs);
+    font-weight: var(--label-fw);
+}
