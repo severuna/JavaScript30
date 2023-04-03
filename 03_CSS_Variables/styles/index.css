@@ -68,3 +68,8 @@ label {
     font-size: var(--label-fs);
     font-weight: var(--label-fw);
 }
+
+input {
+    width: 13rem;
+    height: 4rem;
+}
