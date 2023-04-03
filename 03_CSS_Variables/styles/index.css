@@ -9,3 +9,9 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --color-base: #0ce0b6;
+    --spacing: 10px;
+    --blur: 10px;
+}
