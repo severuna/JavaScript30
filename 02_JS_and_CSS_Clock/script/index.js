@@ -24,4 +24,8 @@ document.addEventListener("DOMContentLoaded", ( ) => {
         const hoursDeg = ((hours / 12) * 360) + ((mins/60)*30) + 90;
         hour.style.transform = `rotate(${hoursDeg}deg)`;
     }
+
+    setInterval(setDate, 1000);
+
+    setDate();
 });
