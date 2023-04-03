@@ -27,3 +27,38 @@ html {
 	border-left: 100px solid red;
 	border-bottom: 50px solid transparent;
 }
+
+:root {
+    --padding: 4rem;
+    --main-width: 100vw;
+    --main-height: 100vh;
+    --color-black: rgba(0, 0, 0, .85);
+    --color-light: azure;
+    --color-green: #0ce0b6;
+    --align-center: center;
+    --gap: 4rem;
+}
+
+.main {
+    width: var(--main-width);
+    height: var(--main-height);
+    align-items: var(--align-center);
+    padding: var(--padding);
+    justify-content: var(--align-center);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(49, 42, 196) 60%, rgb(28, 234, 241) 100%);
+    background-size: 400%;
+    animation: 4s ease 0s infinite alternate backgroundAnimation;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
