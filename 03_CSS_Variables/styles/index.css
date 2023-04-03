@@ -56,7 +56,8 @@ html {
     font-weight: var(--title-fw);
 }
 
-.controls {
+.controls, .field {
     gap: var(--gap);
     align-items: var(--align-center);
 }
+
