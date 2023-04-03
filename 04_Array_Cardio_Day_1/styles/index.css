@@ -88,3 +88,8 @@ span {
         transform: scale(1.1);
     }
 }
+
+.arrow {
+    gap: 0;
+    align-items: center;
+}
