@@ -30,6 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1. Filter the list of inventors for those who were born in the 1500's
     console.log(`1. Filter the list of inventors for those who were born in the 1500's`);
 
+    const fifteens = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
+    console.log(`Filtered array:`);
+    console.table(fifteens);
+
     // 2. Give us an array of the inventor first and last names
     console.log(`2. Give us an array of the inventor first and last names`);
 
