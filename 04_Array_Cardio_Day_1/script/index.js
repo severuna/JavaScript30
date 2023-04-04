@@ -50,5 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 8. Reduce Exercise -  Sum up the instances of each of these
     console.log(`8. Reduce Exercise -  Sum up the instances of each of these`);
+    // create data arr
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'pogostick'];
 
 });
