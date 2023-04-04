@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 2. Give us an array of the inventor first and last names
     console.log(`2. Give us an array of the inventor first and last names`);
+    
+    const fullNames = inventors.map( inventor =>  `${ inventor.first } ${ inventor.last }`);
+    console.log(`Filtered array:`);
+    console.log(fullNames);
 
     // 3. Sort the inventors by birthdate, oldest to youngest
     console.log(`3. Sort the inventors by birthdate, oldest to youngest`);
