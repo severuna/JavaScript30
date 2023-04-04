@@ -27,5 +27,20 @@ document.addEventListener("DOMContentLoaded", () => {
         'Bierce, Ambrose', 'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
     ];
 
+    // 1. Filter the list of inventors for those who were born in the 1500's
+
+    // 2. Give us an array of the inventor first and last names
+
+    // 3. Sort the inventors by birthdate, oldest to youngest
+
+    // 4. How many years did all the inventors live?
+
+    // 5. Sort the inventors by years lived
+
+    // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+
+    // 7. Sort the people alphabetically by last name
+
+    // 8. Reduce Exercise -  Sum up the instances of each of these
 
 });
