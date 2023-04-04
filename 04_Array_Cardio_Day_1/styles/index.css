@@ -101,3 +101,21 @@ span {
 	border-bottom: 5rem solid transparent;
     animation: 1s ease 0s infinite alternate-reverse spanScale;
 }
+
+@media screen and (max-width: 900px){
+    .desc, .triangle {
+        animation: none;
+    }
+
+    .line {
+        width: 15rem;
+        height: 2.5rem;
+        border-radius: 1.5rem 0 0 1.5rem;
+    }    
+
+    .triangle {
+        border-top: 2.5rem solid transparent;
+        border-left: 5rem solid var(--color-green);
+        border-bottom: 2.5rem solid transparent;
+    }
+}
