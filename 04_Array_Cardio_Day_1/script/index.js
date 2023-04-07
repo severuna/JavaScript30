@@ -44,21 +44,50 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. Sort the inventors by birthdate, oldest to youngest
     console.log(`3. Sort the inventors by birthdate, oldest to youngest`);
 
+    const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
+    console.table(ordered);
+
     // 4. How many years did all the inventors live?
     console.log(`4. How many years did all the inventors live?`);
+
+    const totalYears = inventors.reduce((total, inventor) => {
+        return total + (inventor.passed - inventor.year);
+    }, 0);
+    console.log(totalYears);
 
     // 5. Sort the inventors by years lived
     console.log(`5. Sort the inventors by years lived`);
 
-    // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
-    console.log(`6. create a list of Boulevards in Paris that contain 'de' anywhere in the name`);
+    const oldest = inventors.sort(function(a, b) {
+        const lastInventor = a.passed - a.year;
+        const nextInventor = b.passed - b.year;
+        return lastInventor > nextInventor ? -1 : 1;
+    });
+    console.table(oldest);
 
-    // 7. Sort the people alphabetically by last name
+    // 6. Sort the people alphabetically by last name
     console.log(`7. Sort the people alphabetically by last name`);
 
-    // 8. Reduce Exercise -  Sum up the instances of each of these
+    const alpha = people.sort((lastOne, nextOne) => {
+        const [aLast, aFirst] = lastOne.split(', ');
+        const [bLast, bFirst] = nextOne.split(', ');
+        return aLast > bLast ? 1 : -1;
+      });
+    console.log(alpha);  
+
+    // 7. Reduce Exercise -  Sum up the instances of each of these
     console.log(`8. Reduce Exercise -  Sum up the instances of each of these`);
     // create data arr
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'pogostick'];
+
+    const transportation = data.reduce(function(obj, item) {
+      if (!obj[item]) {
+        obj[item] = 0;
+      }
+      obj[item]++;
+      return obj;
+    }, {});
+
+    console.log(transportation);
 
 });
