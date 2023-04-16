@@ -28,6 +28,9 @@ html {
     --padding: 4rem;
     --gap: 3rem;
     --border-radius: 1.5rem;
+    --title-ff: 'Climate Crisis', cursive;
+    --main-ff: 'New Tegomin', serif;
+    --weight: 400;
 }
 
 .main {
