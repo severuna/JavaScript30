@@ -14,3 +14,10 @@ html {
     display: flex;
     flex-direction: column;
 }
+
+:root {
+    --color-black: rgb(15, 15, 15);
+    --color-light: rgb(255, 255, 255);
+    --color-gold: rgb(229, 255, 0);
+    --color-blue: rgb(6, 238, 255);
+}
