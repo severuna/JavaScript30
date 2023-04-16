@@ -9,3 +9,9 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+.panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
