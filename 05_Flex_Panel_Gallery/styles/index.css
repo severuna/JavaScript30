@@ -88,3 +88,8 @@ html {
 .panel p:nth-child(2) {
     font-size: 6rem;
 }
+
+.panel.open {
+    flex: 5;
+    font-size: 4rem;
+}
