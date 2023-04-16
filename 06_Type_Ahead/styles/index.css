@@ -53,3 +53,7 @@ html {
     font-size: var(--title-fs);
     letter-spacing: var(--spacing);
 }
+
+.search-form {
+    gap: var(--gap);
+}
