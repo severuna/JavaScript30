@@ -32,6 +32,7 @@ html {
     --title-ff: 'Climate Crisis', cursive;
     --title-fs: 4rem;
     --main-ff: 'New Tegomin', serif;
+    --main-fs: 2rem;
     --weight: 400;
     --spacing: 2rem;
     --form-width: 40rem;
@@ -58,7 +59,7 @@ html {
 
 .search-form {
     gap: 0;
-    width: 40rem;
+    width: var(--form-width);
 }
 
 .search {
@@ -68,11 +69,12 @@ html {
     color: var(--color-blue);
     font-family: var(--main-ff);
     font-weight: var(--weight);
-    font-size: 2rem;
+    font-size: var(--main-fs);
     text-align: var(--center);
     text-transform: uppercase;
     animation: .4s infinite 0s alternate lighter;
     box-shadow: 0 0 5px var(--color-blue), inset 0 0 5px var(--color-light);
+    letter-spacing: calc(var(--spacing) / 2);
 }
 
 @keyframes lighter {
@@ -82,4 +84,20 @@ html {
     to {
         border: 2px solid var(--color-blue);
     }
+}
+
+.suggestions li {
+    font-family: var(--main-ff);
+    font-weight: var(--weight);
+    font-size: var(--main-fs);
+    background: var(--color-light);
+    list-style: none;
+    border-bottom: 1px solid var(--color-black-alpha);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    margin: 0;
+    padding: calc(var(--padding) / 2);
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    color: var(--color-black);
 }
