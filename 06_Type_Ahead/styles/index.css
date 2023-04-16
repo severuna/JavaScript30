@@ -19,6 +19,7 @@ html {
 
 :root {
     --color-black: rgb(15, 15, 15);
+    --color-black-alpha: rgba(53, 50, 50, 0.8);
     --color-light: rgb(255, 255, 255);
     --color-gold: rgb(229, 255, 0);
     --color-blue: rgb(6, 238, 255);
@@ -58,4 +59,26 @@ html {
 .search-form {
     gap: var(--gap);
     width: 40rem;
+}
+
+.search {
+    padding: calc(var(--padding) / 4) calc(var(--padding) / 2);
+    border: 2px solid var(--color-gold);
+    background-color: var(--color-black-alpha);
+    color: var(--color-blue);
+    font-family: var(--main-ff);
+    font-weight: var(--weight);
+    font-size: 2rem;
+    text-align: var(--center);
+    text-transform: uppercase;
+    animation: .4s infinite 0s alternate lighter;
+}
+
+@keyframes lighter {
+    from {
+        border: 2px solid var(--color-gold);
+    }
+    to {
+        border: 2px solid var(--color-blue);
+    }
 }
