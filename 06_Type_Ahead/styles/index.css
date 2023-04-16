@@ -27,3 +27,13 @@ html {
     --gap: 3rem;
     --border-radius: 1.5rem;
 }
+
+.main {
+    align-items: var(--center);
+    gap: var(--gap);
+    background-color: var(--color-black);
+    max-width: var(--main-width);
+    width: var(--main-width);
+    min-height: var(--main-height);
+    padding: var(--padding);
+}
