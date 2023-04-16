@@ -72,6 +72,7 @@ html {
     text-align: var(--center);
     text-transform: uppercase;
     animation: .4s infinite 0s alternate lighter;
+    box-shadow: 0 0 5px var(--color-blue), inset 0 0 5px var(--color-light);
 }
 
 @keyframes lighter {
