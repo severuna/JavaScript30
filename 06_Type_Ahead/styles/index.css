@@ -20,4 +20,10 @@ html {
     --color-light: rgb(255, 255, 255);
     --color-gold: rgb(229, 255, 0);
     --color-blue: rgb(6, 238, 255);
+    --main-width: 100vw;
+    --main-height: 100vh;
+    --center: center;
+    --padding: 4rem;
+    --gap: 3rem;
+    --border-radius: 1.5rem;
 }
