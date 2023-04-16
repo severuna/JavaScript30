@@ -33,6 +33,7 @@ html {
     --main-ff: 'New Tegomin', serif;
     --weight: 400;
     --spacing: 2rem;
+    --form-width: 40rem;
 }
 
 .main {
@@ -56,4 +57,5 @@ html {
 
 .search-form {
     gap: var(--gap);
+    width: 40rem;
 }
