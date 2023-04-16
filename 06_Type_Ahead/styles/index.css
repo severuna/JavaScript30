@@ -29,8 +29,10 @@ html {
     --gap: 3rem;
     --border-radius: 1.5rem;
     --title-ff: 'Climate Crisis', cursive;
+    --title-fs: 4rem;
     --main-ff: 'New Tegomin', serif;
     --weight: 400;
+    --spacing: 2rem;
 }
 
 .main {
@@ -41,4 +43,13 @@ html {
     width: var(--main-width);
     min-height: var(--main-height);
     padding: var(--padding);
+}
+
+
+.title {
+    font-family: var(--title-ff);
+    font-weight: var(--weight);
+    color: var(--color-blue);
+    font-size: var(--title-fs);
+    letter-spacing: var(--spacing);
 }
