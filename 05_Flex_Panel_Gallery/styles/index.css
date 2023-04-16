@@ -31,3 +31,23 @@ html {
     display: flex;
     flex-direction: column;
 }
+
+.panel1 { 
+    background-image:url('../images/img_1.jpg'); 
+}
+
+.panel2 { 
+    background-image:url('../images/img_2.jpg'); 
+}
+
+.panel3 { 
+    background-image:url('../images/img_3.jpg'); 
+}
+
+.panel4 { 
+    background-image:url('../images/img_4.jpg'); 
+}
+
+.panel5 { 
+    background-image:url('../images/img_5.jpg'); 
+}
