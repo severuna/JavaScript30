@@ -53,19 +53,11 @@ document.addEventListener("DOMContentLoaded", ( ) => {
         }).join('');
 
         suggestions.innerHTML = html;
-        
+
     }
 
-    searchInput.addEventListener('change', ( e ) => {
+    searchInput.addEventListener('change', displayMatches);
 
-        console.log(e.target.value);
-
-    });
-
-    searchInput.addEventListener('keyup', ( e ) => {
-
-        console.log(e.target.value);
-
-    });
+    searchInput.addEventListener('keyup', displayMatches);
     
 });
