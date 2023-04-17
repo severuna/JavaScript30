@@ -31,5 +31,17 @@ document.addEventListener("DOMContentLoaded", ( ) => {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     
     }
+
+    searchInput.addEventListener('change', ( e ) => {
+
+        console.log(e.target.value);
+
+    });
+
+    searchInput.addEventListener('keyup', ( e ) => {
+
+        console.log(e.target.value);
+
+    });
     
 });
