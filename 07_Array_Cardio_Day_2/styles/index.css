@@ -9,3 +9,113 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+:root {
+    --padding: 4rem;
+    --main-width: 100vw;
+    --main-height: 100vh;
+    --color-black: rgb(0, 0, 0);
+    --color-light: azure;
+    --color-green: #0ce0b6;
+    --align-center: center;
+    --gap: 4rem;
+    --title-fs: 5rem;
+    --title-fw: 900;
+    --fs: 3rem;
+    --span-fs: 3.4rem;
+    --font-family: Bradley Hand, cursive;
+    --word-spacing: 1rem;
+    --letter-spacing: var(--word-spacing);
+}
+
+.main {
+    width: var(--main-width);
+    height: var(--main-height);
+    align-items: var(--align-center);
+    padding: var(--padding);
+    justify-content: var(--align-center);
+    background: var(--color-black);
+    gap: var(--gap);
+    font-family: var(--font-family);
+    word-spacing: var(--word-spacing);
+}
+
+.title {
+    font-size: var(--title-fs);
+    color: var(--color-green);
+    font-weight: var(--title-fw);
+    letter-spacing: calc(var(--letter-spacing) * 2);
+}
+
+.desc {
+    color: var(--color-light);
+    font-size: var(--fs);
+    animation: 1s ease 0s infinite alternate spanScale;
+}
+
+span {
+    font-size: var(--span-fs);
+    color: var(--color-green);
+    animation: 1s ease 0s infinite alternate spanScale;
+}
+
+@keyframes spanScale {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.arrow {
+    gap: 0;
+    align-items: center;
+}
+
+.line {
+    background-color: var(--color-green);
+    width: 30rem;
+    height: 5rem;
+    border-radius: 3rem 0 0 3rem;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 5rem solid transparent;
+	border-left: 10rem solid var(--color-green);
+	border-bottom: 5rem solid transparent;
+    animation: 1s ease 0s infinite alternate-reverse spanScale;
+}
+
+@media screen and (max-width: 900px){
+    .desc, .triangle {
+        animation: none;
+    }
+
+    .line {
+        width: 15rem;
+        height: 2.5rem;
+        border-radius: 1.5rem 0 0 1.5rem;
+    }    
+
+    .triangle {
+        border-top: 2.5rem solid transparent;
+        border-left: 5rem solid var(--color-green);
+        border-bottom: 2.5rem solid transparent;
+    }
+}
