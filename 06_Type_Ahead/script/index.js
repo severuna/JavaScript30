@@ -23,6 +23,13 @@ document.addEventListener("DOMContentLoaded", ( ) => {
             return place.city.match(regex) || place.state.match(regex)
 
         });
+
+    }
+    
+    function numberWithCommas(x) {
+
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    
     }
     
 });
