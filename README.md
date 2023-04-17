@@ -17,3 +17,5 @@
 4. **[04_Array_Cardio_Day_1](https://severuna.github.io/JavaScript30/04_Array_Cardio_Day_1/index.html)** - 4 day: work with arrays;
 
 5. **[05_Flex_Panel_Gallery](https://severuna.github.io/JavaScript30/05_Flex_Panel_Gallery/index.html)** - 5 day: Flex Panels Image Gallery;
+
+6. **[06_Type_Ahead](https://severuna.github.io/JavaScript30/06_Type_Ahead/index.html)** - 6 day: Ajax Type Ahead;
